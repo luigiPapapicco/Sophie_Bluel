@@ -52,6 +52,7 @@ body {
 	margin:auto;
 	font-family: 'Work Sans' ;
 	font-size: 14px;
+	user-select: none;
 }
 header {
 	display: flex;
@@ -123,8 +124,45 @@ li:hover {
 }
 #portfolio h2 {
 	text-align: center;
-	margin-bottom: 1em;
+	margin-bottom: 30px;
 }
+
+/* Gestion des filtres */
+.filters {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 20px;
+	font-family: 'Syne';
+	padding-bottom: 30px;
+}
+
+.filters label {
+	padding: 10px 20px;
+	border: 1px solid #1D6154;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.checkbox-active{
+	background: #1D6154;
+	color: white;
+}
+
+.checkbox-inactive{
+	background: none;
+	color: #1D6154;
+}
+
+
+.filters input[type="checkbox"] {
+	display: none;
+}
+
+
+
+/*************************/
+
 .gallery {
 	width: 100%;
 	display: grid;
