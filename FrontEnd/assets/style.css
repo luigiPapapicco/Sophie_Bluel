@@ -52,8 +52,6 @@ body {
 	margin:auto;
 	font-family: 'Work Sans' ;
 	font-size: 14px;
-	user-select: none;
-	background-color: #FFFEF8;
 }
 header {
 	display: flex;
@@ -97,20 +95,6 @@ nav li {
 	font-size: 1.2em;
 }
 
-nav li a {
-	text-decoration: none;
-}
-
-
-a:visited {
-	color: black;
-}
-
-a:hover {
-	color: #B1663C;
-}
-
-
 li:hover {
 	color: #B1663C;
 }
@@ -139,45 +123,8 @@ li:hover {
 }
 #portfolio h2 {
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 1em;
 }
-
-/* Gestion des filtres */
-.filters {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	gap: 20px;
-	font-family: 'Syne';
-	padding-bottom: 30px;
-}
-
-.filters label {
-	padding: 10px 20px;
-	border: 1px solid #1D6154;
-	border-radius: 25px;
-	cursor: pointer;
-}
-
-.checkbox-active{
-	background: #1D6154;
-	color: white;
-}
-
-.checkbox-inactive{
-	background: none;
-	color: #1D6154;
-}
-
-
-.filters input[type="checkbox"] {
-	display: none;
-}
-
-
-
-/*************************/
-
 .gallery {
 	width: 100%;
 	display: grid;
@@ -190,6 +137,42 @@ li:hover {
 	width: 100%;
 
 }
+/* ----------------------------- */
+/* style filter */
+.portfolio-filter {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: .625rem;
+	margin-bottom: 30px;
+}
+
+.portfolio-filter button {
+	border-style: none;
+	border-radius: 25px;
+	padding: 10px 20px ;
+	font-family: 'Syne';
+	font-weight: 700;
+	cursor: pointer;
+	box-sizing: border-box;
+	border: 1px solid #1D6154;
+}
+
+
+.clicked {
+	background-color: #1D6154;
+	color: white;
+}
+
+.not-clicked {
+	background-color: white;
+	color: #1D6154;
+}
+
+
+/* ----------------------------- */
+
+
 #contact {
 	width: 50%;
 margin: auto;
@@ -239,55 +222,3 @@ footer nav ul {
 	margin: 2em
 }
 
-/* login */
-
-#login {
-	margin-top: 150px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	gap: .625rem;
-}
-
-#login h2 {
-	margin-bottom: 1.875rem;
-}
-
-#login form {
-	display: flex;
-	flex-direction: column;
-	gap: .625rem;
-}
-
-#login input {
-	width: 21.875rem;
-	height: 3.125rem;
-	border: none;
-	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
-	margin-bottom: 1.25rem;
-}
-
-#login label {
-	font-size: .875rem;
-	font-weight: 600;
-	color: #3D3D3D;
-}
-
-#login .btn-connect {
-	width: 11.25rem;
-	height: 2.1875rem;
-	border-style: none;
-	cursor: pointer;
-	box-shadow: none;
-}
-
-#login .mdp-forgot {
-	font-weight: 600;
-	color: #3D3D3D;
-	border-bottom: 1px solid #3D3D3D;
-}
-
-#login a {
-	text-decoration: none;
-}
