@@ -2,12 +2,11 @@
 const worksReponse = await fetch("http://localhost:5678/api/works")
 const dataWorks = await worksReponse.json()
 
-
-
 // variable contenant mon élément du DOM qui acceuillera mes nouvelle div
 const galleryElement = document.querySelector(".gallery")
-// fuction créant les balise avec pour paramètre un élément cibler
-function createWorksElement(element) {
+
+// function créant les balise avec pour paramètre un élément cibler
+export function createWorksElement(element) {
     galleryElement.innerHTML = ""
     for (let i = 0 ; i < element.length ; i++) {
         const figureElement = document.createElement("figure")
@@ -43,38 +42,40 @@ function updateButtonStyles(activeButton) {
 const categoriesReponse = await fetch("http://localhost:5678/api/categories")
 const dataCategorie = await categoriesReponse.json()
 
-// récupération de ma balise parent
-const sectionEtTitreElement = document.querySelector("#portfolio h2")
-// création d'une balise div contenant mes bouton
-const divElementFilterBtn = document.createElement("div")
-divElementFilterBtn.classList.add("portfolio-filter")
-// link de ma div après l'élément h2
-sectionEtTitreElement.insertAdjacentElement("afterend", divElementFilterBtn)
 
-// création de mon bouton filtre tous 
-const filterAllButton = document.createElement("button")
-filterAllButton.classList.add("filter-btn" , "not-clicked")
-filterAllButton.innerText = "Tous"
-filterAllButton.addEventListener("click", () => {
-    createWorksElement(dataWorks)
-    updateButtonStyles(filterAllButton);
-})
-divElementFilterBtn.appendChild(filterAllButton)
-
-// generation de mes autres boutons 
-dataCategorie.forEach(category => {
-    const filterButton = document.createElement("button")
-    filterButton.classList.add("filter-btn")
-    filterButton.innerText = category.name
-    filterButton.addEventListener("click", () => {
-        const elementsFiltres = dataWorks.filter(e => e.categoryId === category.id)
-        createWorksElement(elementsFiltres)
-        updateButtonStyles(filterButton);
+export function generateBtn() {
+    // récupération de ma balise parent
+    const sectionEtTitreElement = document.querySelector("#portfolio h2")
+    // création d'une balise div contenant mes bouton
+    const divElementFilterBtn = document.createElement("div")
+    divElementFilterBtn.classList.add("portfolio-filter")
+    // link de ma div après l'élément h2
+    sectionEtTitreElement.insertAdjacentElement("afterend", divElementFilterBtn)
+    
+    // création de mon bouton filtre tous 
+    const filterAllButton = document.createElement("button")
+    filterAllButton.classList.add("filter-btn" , "not-clicked")
+    filterAllButton.innerText = "Tous"
+    filterAllButton.addEventListener("click", () => {
+        createWorksElement(dataWorks)
+        updateButtonStyles(filterAllButton);
     })
-    divElementFilterBtn.appendChild(filterButton)
-});
+    divElementFilterBtn.appendChild(filterAllButton)
+    
+    // generation de mes autres boutons 
+    dataCategorie.forEach(category => {
+        const filterButton = document.createElement("button")
+        filterButton.classList.add("filter-btn")
+        filterButton.innerText = category.name
+        filterButton.addEventListener("click", () => {
+            const elementsFiltres = dataWorks.filter(e => e.categoryId === category.id)
+            createWorksElement(elementsFiltres)
+            updateButtonStyles(filterButton);
+        })
+        divElementFilterBtn.appendChild(filterButton)
+    });
 
-updateButtonStyles(filterAllButton);
-
+    updateButtonStyles(filterAllButton);
+}
 
 // *******************************************************************

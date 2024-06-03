@@ -48,15 +48,27 @@ table {
 }
 /** end reset css**/
 body {
-	max-width: 1140px;
-	margin:auto;
+	/* max-width: 1140px; */
+	/* margin:auto; */
 	font-family: 'Work Sans' ;
 	font-size: 14px;
+	background: #FFFEF8;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
+
+main, header {
+	max-width: 1140px;
+}
+
 header {
 	display: flex;
 	justify-content: space-between;
-	margin: 50px 0
+	margin: 50px 0;
+	width: 100%;
 }
 section {
 	margin: 50px 0
@@ -75,7 +87,6 @@ h1 > span {
 	font-family: 'Work Sans';
 	font-size:10px;
 	letter-spacing: 0.1em;
-;
 }
 
 h2{
@@ -93,11 +104,29 @@ nav ul {
 nav li {
 	padding: 0 10px;
 	font-size: 1.2em;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+
+}
+
+nav li a:hover {
+	color: #B1663C;
 }
 
 li:hover {
 	color: #B1663C;
 }
+
+nav li img {
+	width: 20px;
+	height: 20px;
+}
+
+
 #introduction {
 	display: flex;
 	align-items: center;
@@ -121,6 +150,7 @@ li:hover {
 #introduction p {
 	margin-bottom: 0.5em;
 }
+
 #portfolio h2 {
 	text-align: center;
 	margin-bottom: 1em;
@@ -139,6 +169,7 @@ li:hover {
 }
 /* ----------------------------- */
 /* style filter */
+
 .portfolio-filter {
 	display: flex;
 	flex-direction: row;
@@ -165,12 +196,12 @@ li:hover {
 }
 
 .not-clicked {
-	background-color: white;
+	background: #FFFEF8;
 	color: #1D6154;
 }
 
 
-/* ----------------------------- */
+/* --------------------------- */
 
 
 #contact {
@@ -214,6 +245,14 @@ input[type="submit"]{
 	width: 180px;
 	text-align: center;
 	border-radius: 60px ;
+	cursor: pointer;
+}
+
+footer {
+	box-sizing: border-box;
+	background: white;
+	width: 100%;
+	padding-right: 100px;
 }
 
 footer nav ul {
@@ -222,3 +261,222 @@ footer nav ul {
 	margin: 2em
 }
 
+/* ------------login style--------------- */
+
+.login-link {
+	font-weight: 700;
+}
+
+.body-login {
+	height: 1024px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+#login {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 14.375rem;
+}
+
+#login form {
+	display: flex;
+	flex-direction: column;
+}
+
+#login form label {
+	color: #3D3D3D;
+	margin-bottom: 5px;
+}
+
+.email {
+	margin-top: 35px;
+}
+
+#email-log,
+#password-log {
+	width: 380px;
+	height: 50px;
+	margin-bottom: 25px;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+#btn-connect {
+	width: 11.25rem;
+	height: 2.1875rem;
+	border-style: none;
+}
+
+.mdp-forgot {
+	border-bottom: 1px solid #3D3D3D;
+	color: #3D3D3D;
+	font-size: .875rem;
+}
+
+.error-msg {
+	color: red;
+
+}
+/* --------------------------- */
+
+/* Mode Edition */
+
+.headbandElement {
+	height: 60px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	color: white;
+	font-size: 1rem;
+}
+
+.headbandElement::before {
+	content: "\f044"; 
+	font-family: "Font Awesome 5 Free";
+	margin-right: 8px;
+}
+
+#portfolio {
+	position: relative;
+}
+
+#myBtn {
+	position: relative;
+	display: inline;
+	left: 58.7%;
+	bottom: 50px;
+	margin-left: 0.7625rem;
+	background-color: #FFFEF8;
+	border-style: none;
+	cursor: pointer;
+}
+#myBtn::before {
+	position: relative;
+	display: inline;
+	content: "\f044"; 
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	display: inline;
+	margin-right: 2px;
+}
+
+
+/* boite modal */
+
+/* Style pour la fenêtre modale */
+.modal {
+	display: none;
+    position: fixed;
+	justify-content: center;
+	align-items: center;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.3);
+}
+
+/* Style pour le contenu de la fenêtre modale */
+.modal-content {
+    box-sizing: border-box;
+    background-color: #ffffff;
+	padding: 50px 110px;
+    border-style: none;
+    border-radius: 10px;
+    width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+
+}
+
+/* Style pour le bouton de fermeture */
+.close {
+	position: absolute;
+    right: 20px;
+    top: 20px;
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.titleModal1 {
+	text-align: center;
+	font-family: 'Work Sans';
+	font-size: 1.625rem;
+	color: black;
+	margin-top: 30px;
+}
+
+.modalGallery {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 30px;
+}
+
+.modalGallery img {
+	width: 100%;
+}
+
+.border {
+	width: 100%;
+	color: #B3B3B3;
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+#btn-addImg {
+	font-family: 'Syne';
+    color: white;
+    background-color: #1D6154;
+    text-align: center;
+    border-radius: 60px;
+    border-style: none;
+	padding: 10px 40px;
+	margin-top: 50px;
+	cursor: pointer;
+}
+
+.modalGallery figure {
+	position: relative;
+}
+
+.modalGallery .trash-icon {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	font-size: .625rem;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: black;
+	color: white;
+	padding: 5px;
+
+}
+
+.trash-icon {
+	content: "\f044"; 
+	font-family: "Font Awesome 6 Free";
+}
