@@ -1,17 +1,16 @@
-import { generateBtn } from "./dynamics-elements.js"
-import { adminStructure } from "./admin-mode.js"
+import { renderVisitorMode } from "./visitor-structure.js";
+import { renderAdminMode } from "./admin-structure.js";
 
-// function verification si quelque chose est stocké dans mon sessionStorage
-function isTokenSored() {
-    const token = sessionStorage.getItem('authToken')
-    return token !== null 
+// Vérifie si un token est stocké dans le sessionStorage
+function isTokenPresent() {
+    return sessionStorage.getItem('authToken') !== null;
 }
 
-// condition testant si une clef est entré si ces le cas on passe en config admin sinon en config users
-if (isTokenSored()) {
-    adminStructure()
-    console.log("mode admin")
+// Active le mode admin ou visiteur en fonction de la présence du token
+if (isTokenPresent()) {
+    renderAdminMode();
+    console.log("mode admin");
 } else {
-    generateBtn()
-    console.log("mode visiteur")
+    renderVisitorMode();
+    console.log("mode visiteur");
 }
