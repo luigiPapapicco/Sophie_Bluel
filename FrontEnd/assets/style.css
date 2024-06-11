@@ -322,9 +322,8 @@ footer nav ul {
 	color: red;
 
 }
-/* --------------------------- */
 
-/* Mode Edition */
+/* ------------admin style--------------- */
 
 .headbandElement {
 	height: 60px;
@@ -368,7 +367,7 @@ footer nav ul {
 }
 
 
-/* boite modal */
+/******************** modal pour la supr d'une photo ***************/
 
 /* Style pour la fenêtre modale */
 .modal {
@@ -480,7 +479,7 @@ footer nav ul {
 	font-family: "Font Awesome 6 Free";
 }
 
-/* modal2 */
+/* modal pour l'ajout d'une photo */
 
 .modalAddPhoto {
 	display: none;
