@@ -22,8 +22,8 @@ Créer une page web dynamique avec JavaScript.
  -Étape 1.1 : Récupération des travaux depuis le back-end
  -Étape 1.2 : Réalisation du filtre des travaux
 - Coder la page de connexion
-. Étape 2.1 : Intégration du design de la page de formulaire
-. Étape 2.2 : Authentification de l’utilisateur
+  -Etape 2.1 : Intégration du design de la page de formulaire
+  -Étape 2.2 : Authentification de l’utilisateur
 - Ajouter la modale
  -Étape 3.1 : Ajout de la fenêtre modale
  -Étape 3.2 : Suppression de travaux existants
