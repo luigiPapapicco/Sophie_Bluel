@@ -1,6 +1,9 @@
-# Portfolio-architecte-sophie-bluel
+# Portfolio de l'architecte Sophie Bluel
 
-Code du projet 6 d'intégrateur web.
+## Technologies utilisées
+| <img src="readme_files/html.svg" alt="logo html" width="100" height="100">  | <img src="readme_files/css.svg" alt="logo css" width="100" height="100">  | <img src="readme_files/javascript.svg" alt="logo css" width="100" height="100"> |
+|:---------------------------------------------------------------------------:|:-------------------------------------------------------------------------:|:--------------------------------------------------------------------------:|
+| HTML                                                                        | CSS                                                                       | JavaScript                                                                 |
 
 ## Information pour le lancer le code
 
