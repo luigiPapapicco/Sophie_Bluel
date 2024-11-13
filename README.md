@@ -18,13 +18,13 @@ sur la conception d’un site portfolio d’une architecte d’intérieur.
 Créer une page web dynamique avec JavaScript.
 
 ## Étapes du projet:
-Créez la page de présentation des travaux à partir du HTML existant
-. Étape 1.1 : Récupération des travaux depuis le back-end
-. Étape 1.2 : Réalisation du filtre des travaux
-Coder la page de connexion
+- Créez la page de présentation des travaux à partir du HTML existant
+ -Étape 1.1 : Récupération des travaux depuis le back-end
+ -Étape 1.2 : Réalisation du filtre des travaux
+- Coder la page de connexion
 . Étape 2.1 : Intégration du design de la page de formulaire
 . Étape 2.2 : Authentification de l’utilisateur
-Ajouter la modale
-. Étape 3.1 : Ajout de la fenêtre modale
-. Étape 3.2 : Suppression de travaux existants
-. Étape 3.3 : Envoi d’un nouveau projet au back-end via le formulaire de la modale
+- Ajouter la modale
+ -Étape 3.1 : Ajout de la fenêtre modale
+ -Étape 3.2 : Suppression de travaux existants
+ -Étape 3.3 : Envoi d’un nouveau projet au back-end via le formulaire de la modale
