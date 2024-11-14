@@ -1,10 +1,10 @@
 # Portfolio de l'architecte Sophie Bluel
-<img src="readme_files/Homepage(1).png" alt="logo html" width="100" height="100">
+<img src="readme_files/homepage.png" alt="screen de la page d'acceuil" width="100" height="100">
 
 
 
 ## Technologies utilisées
-| <img src="readme_files/html.svg" alt="logo html" width="100" height="100">  | <img src="readme_files/css.svg" alt="logo css" width="100" height="100">  | <img src="readme_files/javascript.svg" alt="logo css" width="100" height="100"> |
+| <img src="readme_files/html.svg" alt="logo html" width="100" height="100">  | <img src="readme_files/css.svg" alt="logo css" width="100" height="100">  | <img src="readme_files/javascript.svg" alt="logo javascript" width="100" height="100"> |
 |:---------------------------------------------------------------------------:|:-------------------------------------------------------------------------:|:--------------------------------------------------------------------------:|
 | HTML                                                                        | CSS                                                                       | JavaScript                                                                 |
 
