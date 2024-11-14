@@ -1,7 +1,7 @@
 # Portfolio de l'architecte Sophie Bluel
 
 
-![screen de la page d'accueil](https://github.com/luigiPapapicco/Sophie_Bluel/blob/main/readme_files/Homepage (1).png)
+![screen de la page d'accueil](https://github.com/luigiPapapicco/Sophie_Bluel/blob/main/readme_files/home.png)
 
 
 
