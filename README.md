@@ -1,5 +1,6 @@
 # Portfolio de l'architecte Sophie Bluel
-<img src="readme_files/homepage.png" alt="screen de la page d'acceuil" width="100" height="100">
+
+<img src="readme_files/homepage.png" alt="screen de la page d'acceuil">
 
 
 
